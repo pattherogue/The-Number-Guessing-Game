@@ -14,6 +14,7 @@ import random
 print(" Hi there! Welcome to the one and only Number Guessing Game!")
 
 def being_playing();
+    num_range = random.randint(1, 10)
 
 # Pick a number between 1 and 10
 
