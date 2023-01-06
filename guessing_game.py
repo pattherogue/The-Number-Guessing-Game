@@ -13,6 +13,8 @@
 import random
 print(" Hi there! Welcome to the one and only Number Guessing Game!")
 
+def being_playing();
+
 # Pick a number between 1 and 10
 
 # It is higher!
