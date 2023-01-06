@@ -7,3 +7,5 @@
 # After an incorrect guess I should be told if my answer if higher or lower than the answer
 
 # After the game ends I should be shown my number of attempts at guessing
+
+# When game ends, an ending message is shown to player
