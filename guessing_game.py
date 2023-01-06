@@ -11,3 +11,4 @@
 # When game ends, an ending message is shown to player
 
 import random
+print(" Hi there! Welcome to the one and only Number Guessing Game!")
