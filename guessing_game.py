@@ -9,3 +9,5 @@
 # After the game ends I should be shown my number of attempts at guessing
 
 # When game ends, an ending message is shown to player
+
+import random
