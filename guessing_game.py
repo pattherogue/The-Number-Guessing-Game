@@ -16,7 +16,11 @@ print(" Hi there! Welcome to the one and only Number Guessing Game!")
 # Pick a number between 1 and 10
 
 # It is higher!
+# It is lower!
 
 # You got it! It took you 2 tries
 
 # Closing game, see you next time!
+
+# You got it! It took you seven tries.
+# Would you like to play again? [y]es/[n]o
