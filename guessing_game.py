@@ -25,7 +25,9 @@ while True:
     except ValueError:
         print("Trying guessing with a number ONLY :)")
     if guess < 1:
-        print("Sorry, guess cannot be less than 1.") 
+        print("Sorry, guess cannot be less than 1. ") 
+    if guess > 10:
+        print("Sorry, guess cannot be greater than 10. ")
 
 # It is higher!
 # It is lower!
