@@ -39,7 +39,7 @@ while True:
         print("Go higher")
     if guess == num_range:
         guess_attempts += 1
-        print("Yay, you did it!")
+        print("Yay, you got it! It took you {} tries.)
 
 # It is higher!
 # It is lower!
