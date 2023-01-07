@@ -31,6 +31,9 @@ while True:
     if guess > 10:
         print("Sorry, guess cannot be greater than 10. ")
         continue
+    if guess > num_range:
+        guess_attempts += 1
+        print("Go higher")
 
 # It is higher!
 # It is lower!
