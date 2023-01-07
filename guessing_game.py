@@ -21,9 +21,11 @@ def being_playing();
 # Pick a number between 1 and 10
 while True:
     try:
-        guess=int(input("Think of a number falling in the range of 1 to 10: "))\
+        guess= int(input("Think of a number falling in the range of 1 to 10: "))\
     except ValueError:
         print("Trying guessing with a number ONLY :)")
+    if guess < 1:
+        print("Sorry, guess cannot be less than 1.") 
 
 # It is higher!
 # It is lower!
