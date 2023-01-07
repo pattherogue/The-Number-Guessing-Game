@@ -19,7 +19,9 @@ def being_playing();
     attempt_limit = 10
 
 # Pick a number between 1 and 10
-
+while True:
+    try:
+        guess=int(input("Think of a number falling in the range 1 to 10: "))
 # It is higher!
 # It is lower!
 
