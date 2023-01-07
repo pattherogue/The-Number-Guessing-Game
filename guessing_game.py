@@ -24,10 +24,13 @@ while True:
         guess= int(input("Think of a number falling in the range of 1 to 10: "))\
     except ValueError:
         print("Trying guessing with a number ONLY :)")
+        continue
     if guess < 1:
         print("Sorry, guess cannot be less than 1. ") 
+        continue
     if guess > 10:
         print("Sorry, guess cannot be greater than 10. ")
+        continue
 
 # It is higher!
 # It is lower!
