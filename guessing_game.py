@@ -11,36 +11,39 @@
 # When game ends, an ending message is shown to player
 
 import random
+from turtle import begin_fill
 print(" Hi there! Welcome to the one and only Number Guessing Game!")
 
-def being_playing();
+def begin_playing();
     num_range = random.randint(1, 10)
     guess_attempt = 0
     attempt_limit = 10
 
 # Pick a number between 1 and 10
-while True:
-    try:
-        guess= int(input("Think of a number falling in the range of 1 to 10: "))\
-    except ValueError:
-        print("Trying guessing with a number ONLY :)")
-        continue
-    if guess < 1:
-        print("Sorry, guess cannot be less than 1. ") 
-        continue
-    if guess > 10:
-        print("Sorry, guess cannot be greater than 10. ")
-        continue
-    if guess > num_range:
-        guess_attempts += 1
-        print("Go higher")
-    if guess < num_range:
-        guess_attempts += 1
-        print("Go higher")
-    if guess == num_range:
-        guess_attempts += 1
-        print("Yay, you got it! It took you {} tries.)
-        break
+    while True:
+        try:
+            guess= int(input("Think of a number falling in the range of 1 to 10: "))\
+        except ValueError:
+            print("Trying guessing with a number ONLY :)")
+            continue
+        if guess < 1:
+            print("Sorry, guess cannot be less than 1. ") 
+            continue
+        if guess > 10:
+            print("Sorry, guess cannot be greater than 10. ")
+            continue
+        if guess > num_range:
+            guess_attempts += 1
+            print("Go higher")
+        if guess < num_range:
+            guess_attempts += 1
+            print("Go higher")
+        if guess == num_range:
+            guess_attempts += 1
+            print("Yay, you got it! It took you {} tries.")
+            break
+
+begin_playing();
 
 # It is higher!
 # It is lower!
