@@ -31,7 +31,8 @@ def begin_playing():
             continue
         if attempt_limit == 0 and guess != num_range:
             print (" Sorry, you lost. Feel free to try again trmo! ")
-
+        if guess > num_range:
+            print(" Try lower like the sea ")
         if guess < 1:
             print("Sorry, guess cannot be less than 1. ") 
             continue
