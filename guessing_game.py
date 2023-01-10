@@ -32,13 +32,13 @@ def begin_playing():
             print("Sorry, guess cannot be greater than 10. ")
             continue
         if guess > num_range:
-            guess_attempts += 1
+            guess_attempt += 1
             print("Go higher")
         if guess < num_range:
-            guess_attempts += 1
+            guess_attempt += 1
             print("Go higher")
         if guess == num_range:
-            guess_attempts += 1
+            guess_attempt += 1
             print("Yay, you got it! It took you {guess_attempt} tries.")
             break
 
