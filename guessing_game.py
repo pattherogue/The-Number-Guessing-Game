@@ -28,6 +28,9 @@ def begin_playing():
         if guess > 10 or guess < 1:
             print(" Range has to be from 1 to 10. Try again! ")
             attempt_limit += 1
+            continue
+        if attempt_limit == 0 and guess != num_range:
+            print (" Sorry, you lost. Feel free to try again trmo! ")
 
         if guess < 1:
             print("Sorry, guess cannot be less than 1. ") 
