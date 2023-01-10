@@ -21,6 +21,8 @@ def begin_playing():
 # Pick a number between 1 and 10
     while True:
         try:
+            guess_attempt += 1
+            attempt_limit -= 1
             guess= int(input("Think of a number falling in the range of 1 to 10: "))
         except ValueError:
             print("Trying guessing with a number ONLY :)")
@@ -35,21 +37,9 @@ def begin_playing():
             print(" Try lower like the sea ")
             continue
         if guess < num_range:
-            print(" Try higher likethe sky ")
-        if guess < 1:
-            print("Sorry, guess cannot be less than 1. ") 
+            print(" Try higher like the sky ")
             continue
-        if guess > 10:
-            print("Sorry, guess cannot be greater than 10. ")
-            continue
-        if guess > num_range:
-            guess_attempt += 1
-            print("Go higher")
-        if guess < num_range:
-            guess_attempt += 1
-            print("Go lower")
-        if guess == num_range:
-            guess_attempt += 1
+        else
             print("Yay, you got it! It took you {guess_attempt} tries.")
             break
 
