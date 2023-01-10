@@ -11,7 +11,6 @@
 # When game ends, an ending message is shown to player
 
 import random
-from turtle import begin_fill
 print(" Hi there! Welcome to the one and only Number Guessing Game!")
 
 def begin_playing():
@@ -22,7 +21,7 @@ def begin_playing():
 # Pick a number between 1 and 10
     while True:
         try:
-            guess= int(input("Think of a number falling in the range of 1 to 10: "))\
+            guess= int(input("Think of a number falling in the range of 1 to 10: "))
         except ValueError:
             print("Trying guessing with a number ONLY :)")
             continue
