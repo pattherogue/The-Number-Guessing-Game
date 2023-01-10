@@ -14,7 +14,7 @@ import random
 from turtle import begin_fill
 print(" Hi there! Welcome to the one and only Number Guessing Game!")
 
-def begin_playing();
+def begin_playing():
     num_range = random.randint(1, 10)
     guess_attempt = 0
     attempt_limit = 10
@@ -43,7 +43,7 @@ def begin_playing();
             print("Yay, you got it! It took you {guess_attempt} tries.")
             break
 
-begin_playing();
+begin_playing()
 
 # It is higher!
 # It is lower!
