@@ -25,6 +25,10 @@ def begin_playing():
         except ValueError:
             print("Trying guessing with a number ONLY :)")
             continue
+        if guess > 10 or guess < 1:
+            print(" Range has to be from 1 to 10. Try again! ")
+
+
         if guess < 1:
             print("Sorry, guess cannot be less than 1. ") 
             continue
