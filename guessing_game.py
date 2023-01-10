@@ -19,7 +19,7 @@ def begin_playing():
     attempt_limit = 7
 
 # Pick a number between 1 and 10
-    while True:
+    while guess != num_range:
         try:
             guess_attempt += 1
             attempt_limit -= 1
