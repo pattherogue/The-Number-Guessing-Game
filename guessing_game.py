@@ -39,7 +39,7 @@ def begin_playing():
         if guess < num_range:
             print(" Try higher like the sky ")
             continue
-        else
+        else:
             print("Yay, you got it! It took you {guess_attempt} tries.")
             break
 
