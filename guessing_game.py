@@ -40,7 +40,7 @@ def begin_playing();
             print("Go higher")
         if guess == num_range:
             guess_attempts += 1
-            print("Yay, you got it! It took you {} tries.")
+            print("Yay, you got it! It took you {guess_attempt} tries.")
             break
 
 begin_playing();
