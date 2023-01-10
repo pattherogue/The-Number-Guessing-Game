@@ -16,7 +16,7 @@ print(" Hi there! Welcome to the one and only Number Guessing Game!")
 def begin_playing():
     num_range = random.randint(1, 10)
     guess_attempt = 0
-    attempt_limit = 10
+    attempt_limit = 7
 
 # Pick a number between 1 and 10
     while True:
@@ -27,7 +27,7 @@ def begin_playing():
             continue
         if guess > 10 or guess < 1:
             print(" Range has to be from 1 to 10. Try again! ")
-
+            attempt_limit += 1
 
         if guess < 1:
             print("Sorry, guess cannot be less than 1. ") 
