@@ -1,6 +1,7 @@
 # I should see some kind of text header, welcome or game intro message
 import random
 print(" Hi there! Welcome to the one and only Number Guessing Game!")
+high_score = 100
 
 # Random number should be chosen within range
 def begin_playing():
