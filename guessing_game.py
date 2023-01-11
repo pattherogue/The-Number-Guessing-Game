@@ -9,20 +9,7 @@ def begin_playing():
     attempt_limit = 7
     
 # I should be continuously promptred for a guess until I get it right
-
-# After an incorrect guess I should be told if my answer if higher or lower than the answer
-
-# After the game ends I should be shown my number of attempts at guessing
-
-# When game ends, an ending message is shown to player
-
-
-
-
-
-
-# Pick a number between 1 and 10
-    while True:
+  while True:
         try:
             guess_attempt += 1
             attempt_limit -= 1
@@ -30,6 +17,7 @@ def begin_playing():
         except ValueError:
             print("Trying guessing with a number ONLY. ")
             continue
+        # After an incorrect guess I should be told if my answer if higher or lower than the answer
         if guess > 10 or guess < 1:
             print(" Range has to be from 1 to 10. Try again! ")
             attempt_limit += 1
@@ -43,11 +31,26 @@ def begin_playing():
             print(" Try higher like the sky ")
             continue
         else:
+            # After the game ends I should be shown my number of attempts at guessing
+            # When game ends, an ending message is shown to player
             print("Yay, you got it! It took you {} tries.").format(guess_attempt)
             break
 
 begin_playing()
 
+
+
+
+
+
+
+
+
+
+
+
+# Pick a number between 1 and 10
+  
 # It is higher!
 # It is lower!
 
