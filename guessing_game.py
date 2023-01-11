@@ -40,7 +40,7 @@ def begin_playing():
             print(" Try higher like the sky ")
             continue
         else:
-            print("Yay, you got it! It took you {guess_attempt} tries.")
+            print("Yay, you got it! It took you {} tries.").format(guess_attempt)
             break
 
 begin_playing()
