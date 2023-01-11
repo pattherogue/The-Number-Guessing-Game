@@ -62,3 +62,5 @@ begin_playing()
 # Prompted if player would like to play again after win
 
 # Beginning of each game -- shown current highest score 
+
+# Random number is generated when player plays again
