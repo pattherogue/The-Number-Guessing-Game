@@ -71,3 +71,6 @@ begin_playing()
 # Beginning of each game -- shown current highest score 
 
 # Random number is generated when player plays again
+
+def end_game():
+    
