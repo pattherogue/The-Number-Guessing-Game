@@ -1,7 +1,12 @@
 # I should see some kind of text header, welcome or game intro message
+import random
+print(" Hi there! Welcome to the one and only Number Guessing Game!")
 
 # Random number should be chosen within range
-
+    num_range = random.randint(1, 10)
+    guess_attempt = 0
+    attempt_limit = 7
+    
 # I should be continuously promptred for a guess until I get it right
 
 # After an incorrect guess I should be told if my answer if higher or lower than the answer
@@ -10,13 +15,10 @@
 
 # When game ends, an ending message is shown to player
 
-import random
-print(" Hi there! Welcome to the one and only Number Guessing Game!")
+
 
 def begin_playing():
-    num_range = random.randint(1, 10)
-    guess_attempt = 0
-    attempt_limit = 7
+
 
 # Pick a number between 1 and 10
     while True:
