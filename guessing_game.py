@@ -3,6 +3,7 @@ import random
 print(" Hi there! Welcome to the one and only Number Guessing Game!")
 
 # Random number should be chosen within range
+def begin_playing():
     num_range = random.randint(1, 10)
     guess_attempt = 0
     attempt_limit = 7
@@ -17,7 +18,7 @@ print(" Hi there! Welcome to the one and only Number Guessing Game!")
 
 
 
-def begin_playing():
+
 
 
 # Pick a number between 1 and 10
