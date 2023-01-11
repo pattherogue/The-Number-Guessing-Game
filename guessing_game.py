@@ -54,3 +54,7 @@ begin_playing()
 
 # You got it! It took you seven tries.
 # Would you like to play again? [y]es/[n]o
+
+# EXTRA CREDIT
+
+# Player should be told to try again if guess is out of range
