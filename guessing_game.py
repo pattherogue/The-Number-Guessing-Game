@@ -82,3 +82,5 @@ def end_game():
         if try_again == "no":
             break
         if try_again != "yes" or "no":
+            print(" Please answer with 'yes' or 'no' ")
+            continue
