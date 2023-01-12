@@ -77,3 +77,5 @@ def end_game():
     attempt_limit = 7
     while True:
         try_again=input("Would you like to play again? ")
+        if try_again == "yes":
+            
