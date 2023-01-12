@@ -8,7 +8,7 @@ def end_game():
     guess_attempt = 0
     attempt_limit = 7
     while True:
-        try_again=input("Would you like to play again? Please answer with 'y' for YES or 'n' for NO ")
+        try_again=input("Would you like to play again? Please answer with 'y' for [YES] or 'n' for [NO] ")
         if try_again == "y":
             begin_playing()
         if try_again == "n":
