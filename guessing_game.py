@@ -73,4 +73,7 @@ begin_playing()
 # Random number is generated when player plays again
 
 def end_game():
-    
+    guess_attempt += 1
+    attempt_limit -= 1
+    while True:
+        
