@@ -73,7 +73,7 @@ begin_playing()
 # Random number is generated when player plays again
 
 def end_game():
-    guess_attempt += 1
-    attempt_limit -= 1
+    guess_attempt = 0
+    attempt_limit = 7
     while True:
         try_again=input("Would you like to play again? ")
