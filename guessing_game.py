@@ -79,4 +79,5 @@ def end_game():
         try_again=input("Would you like to play again? ")
         if try_again == "yes":
             begin_playing()
+        if try_again == "no":
             
