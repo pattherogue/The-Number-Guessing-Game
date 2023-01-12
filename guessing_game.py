@@ -3,6 +3,20 @@ import random
 print(" Hi there! Welcome to the one and only Number Guessing Game!")
 high_score = 100
 
+
+def end_game():
+    guess_attempt = 0
+    attempt_limit = 7
+    while True:
+        try_again=input("Would you like to play again? ")
+        if try_again == "yes":
+            begin_playing()
+        if try_again == "no":
+            break
+        if try_again != "yes" or "no":
+            print(" Please answer with 'yes' or 'no' ")
+            continue
+
 # Random number should be chosen within range
 def begin_playing():
     num_range = random.randint(1, 10)
@@ -36,6 +50,7 @@ def begin_playing():
                 # When game ends, an ending message is shown to player
                 print("Yay, you got it! It took you {} tries.").format(guess_attempt)
                 break
+            end_game()
 
 begin_playing()
 
@@ -72,15 +87,3 @@ begin_playing()
 
 # Random number is generated when player plays again
 
-def end_game():
-    guess_attempt = 0
-    attempt_limit = 7
-    while True:
-        try_again=input("Would you like to play again? ")
-        if try_again == "yes":
-            begin_playing()
-        if try_again == "no":
-            break
-        if try_again != "yes" or "no":
-            print(" Please answer with 'yes' or 'no' ")
-            continue
