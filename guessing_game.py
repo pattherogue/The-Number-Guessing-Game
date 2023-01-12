@@ -8,13 +8,13 @@ def end_game():
     guess_attempt = 0
     attempt_limit = 7
     while True:
-        try_again=input("Would you like to play again? ")
-        if try_again == "yes":
+        try_again=input("Would you like to play again? Please answer with 'y' for YES or 'n' for NO ")
+        if try_again == "y":
             begin_playing()
-        if try_again == "no":
+        if try_again == "n":
             break
         if try_again != "yes" or "no":
-            print(" Please answer with 'yes' or 'no' ")
+            print(" Please answer with 'y' for YES or 'n' for NO ")
             continue
 
 # Random number should be chosen within range
@@ -50,7 +50,7 @@ def begin_playing():
                 # When game ends, an ending message is shown to player
                 print("Yay, you got it! It took you {} tries.").format(guess_attempt)
                 break
-            end_game()
+    end_game()
 
 begin_playing()
 
