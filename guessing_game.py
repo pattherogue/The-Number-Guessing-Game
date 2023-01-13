@@ -6,11 +6,14 @@ high_score = 100
 
 def end_game():
 
+    yes = "yes"
+    no = "no"
+
     while True:
         try_again=input("Would you like to play again? Please answer with ['yes'] or ['no'] ")
-        if try_again == "yes":
+        if try_again == yes:
             begin_playing()
-        if try_again == "no":
+        if try_again == no:
             break
         if try_again != "yes" or "no":
             print(" Please answer with 'yes' for YES or 'no' for NO ")
