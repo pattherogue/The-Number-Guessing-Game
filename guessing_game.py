@@ -13,6 +13,7 @@ def end_game():
     while True:
         # Prompted if player would like to play again after win
         try_again=input("Would you like to play again? Please answer with ['yes'] or ['no'] ")
+        # Random number is generated when player plays again
         if try_again == yes:
             begin_playing()
         if try_again == no:
@@ -84,5 +85,5 @@ begin_playing()
 
 # Beginning of each game -- shown current highest score 
 
-# Random number is generated when player plays again
+
 
