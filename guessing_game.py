@@ -16,7 +16,7 @@ def end_game():
         if try_again == no:
             break
         if try_again != "yes" or "no":
-            print(" Please answer with 'yes' for YES or 'no' for NO ")
+            print(" Please answer with ['yes'] or ['no'] ")
             continue
 
 # Random number should be chosen within range
