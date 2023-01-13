@@ -1,8 +1,7 @@
 # I should see some kind of text header, welcome or game intro message
 import random
 print(" Hi there! Welcome to the one and only Number Guessing Game!")
-high_score = 100
-player_score = []
+
 
 
 def end_game():
@@ -33,7 +32,7 @@ def begin_playing():
             try:
                 guess_attempt += 1
                 attempt_limit -= 1
-                guess= int(input("This is the current high score {player_score}. Think of a number from 1 to 10 (both included): "))
+                guess= int(input("Think of a number from 1 to 10 (both included): "))
             except ValueError:
                 print("Trying guessing with a number ONLY. ")
                 attempt_limit += 1
@@ -57,8 +56,6 @@ def begin_playing():
                 # After the game ends I should be shown my number of attempts at guessing
                 # When game ends, an ending message is shown to player
                 print("Yay, you got it! It took you {} tries.").format(guess_attempt)
-                player_score.append(guess_attempt)
-                player_score.sort()
                 break
     end_game()
 
