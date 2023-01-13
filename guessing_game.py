@@ -2,6 +2,7 @@
 import random
 print(" Hi there! Welcome to the one and only Number Guessing Game!")
 high_score = 100
+player_score = []
 
 
 def end_game():
