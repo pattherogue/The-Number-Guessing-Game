@@ -37,6 +37,7 @@ def begin_playing():
                 attempt_limit += 1
                 continue
             # After an incorrect guess I should be told if my answer if higher or lower than the answer
+            # Player should be told to try again if guess is out of range
             if guess > 10 or guess < 1:
                 print(" Range has to be from 1 to 10. Try again! ")
                 attempt_limit += 1
@@ -72,21 +73,11 @@ begin_playing()
 
 
 
-# Pick a number between 1 and 10
-  
-# It is higher!
-# It is lower!
 
-# You got it! It took you 2 tries
-
-# Closing game, see you next time!
-
-# You got it! It took you seven tries.
-# Would you like to play again? [y]es/[n]o
 
 # EXTRA CREDIT
 
-# Player should be told to try again if guess is out of range
+
 
 # Prompted if player would like to play again after win
 
