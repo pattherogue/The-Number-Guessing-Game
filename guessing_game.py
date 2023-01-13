@@ -53,6 +53,7 @@ def begin_playing():
                 # When game ends, an ending message is shown to player
                 print("Yay, you got it! It took you {} tries.").format(guess_attempt)
                 player_score.append(guess_attempt)
+                player_score.sort()
                 break
     end_game()
 
