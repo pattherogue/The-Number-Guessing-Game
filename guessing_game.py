@@ -34,7 +34,7 @@ def begin_playing():
                 attempt_limit -= 1
                 guess= int(input("Think of a number from 1 to 10 (both included): "))
             except ValueError as err:
-                print(f"Trying guessing with a number ONLY. ")
+                print(f"Trying guessing with a number ONLY.")
                 attempt_limit += 1
                 continue
             # After an incorrect guess I should be told if my answer if higher or lower than the answer
