@@ -33,7 +33,7 @@ def begin_playing():
                 guess_attempt += 1
                 attempt_limit -= 1
                 guess= int(input("Think of a number from 1 to 10 (both included): "))
-            except ValueError as err:
+            except ValueError:
                 print("Trying guessing with a number ONLY.")
                 attempt_limit += 1
                 continue
