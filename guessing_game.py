@@ -75,13 +75,3 @@ begin_playing()
 
 
 
-# EXTRA CREDIT
-
-
-
-
-
-# Beginning of each game -- shown current highest score 
-
-
-
