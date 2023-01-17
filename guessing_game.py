@@ -44,9 +44,11 @@ def begin_playing():
             end_game()
         if guess > num_range:
             print(" Try lower like the sea ")
+            guess_attempt += 1
             continue
         if guess < num_range:
-            print(" Try higher like the sky ")  
+            print(" Try higher like the sky ") 
+            guess_attempt += 1 
             continue
         else:
             # After the game ends I should be shown my number of attempts at guessing
