@@ -22,7 +22,7 @@ def end_game():
 # Random number should be chosen within range
 def begin_playing():
     num_range = random.randint(1, 10)
-    guess_attempt = 1
+    guess_attempt = 0
     attempt_limit = 7
     
 # I should be continuously promptred for a guess until I get it right
