@@ -41,6 +41,7 @@ def begin_playing():
         if guess > 10 or guess < 1:
             print(" Range has to be from 1 to 10. Try again! ")
             guess_attempt += 1
+            attempt_limit -= 1
             continue
         if attempt_limit == 0 and guess != num_range:
             print (" Sorry, you lost. Feel free to try again trmo! ")
@@ -48,10 +49,12 @@ def begin_playing():
         if guess > num_range:
             print(" Try lower like the sea ")
             guess_attempt += 1
+            attempt_limit -= 1
             continue
         if guess < num_range:
             print(" Try higher like the sky ")  
             guess_attempt += 1 
+            attempt_limit -= 1
             continue
         else:
             # After the game ends I should be shown my number of attempts at guessing
