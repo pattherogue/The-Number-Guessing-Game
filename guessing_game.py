@@ -22,14 +22,12 @@ def end_game():
 # Random number should be chosen within range
 def begin_playing():
     num_range = random.randint(1, 10)
-    guess_attempt = 0
+    guess_attempt = 1
     attempt_limit = 7
     
 # I should be continuously promptred for a guess until I get it right
     while True:
         try:
-            guess_attempt += 1
-            attempt_limit -= 1
             guess= int(input("Think of a number from 1 to 10 (both included): "))
         except ValueError:
             print("Trying guessing with a number ONLY.")
