@@ -36,21 +36,27 @@ def begin_playing():
         except ValueError:
             print("Trying guessing with a number ONLY.")
             attempt_limit += 1
+            guess_attempt += 1
             continue
         # After an incorrect guess I should be told if my answer if higher or lower than the answer
         # Player should be told to try again if guess is out of range
         if guess > 10 or guess < 1:
             print(" Range has to be from 1 to 10. Try again! ")
             attempt_limit += 1
+            guess_attempt += 1
             continue
         if attempt_limit == 0 and guess != num_range:
             print (" Sorry, you lost. Feel free to try again trmo! ")
             end_game()
         if guess > num_range:
             print(" Try lower like the sea ")
+            attempt_limit += 1
+            guess_attempt += 1
             continue
         if guess < num_range:
             print(" Try higher like the sky ")
+            attempt_limit += 1
+            guess_attempt += 1
             continue
         else:
             # After the game ends I should be shown my number of attempts at guessing
