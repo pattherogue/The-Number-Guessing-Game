@@ -3,7 +3,6 @@ import random
 print(" Hi there! Welcome to the one and only Number Guessing Game!")
 
 def end_game():
-
     yes = "yes"
     no = "no"
 
@@ -28,7 +27,6 @@ def begin_playing():
 # I should be continuously promptred for a guess until I get it right
     while True:
         try:
-            guess_attempt = 0
             guess= int(input("Think of a number from 1 to 10 (both included): "))
         except ValueError:
             print("Trying guessing with a number ONLY.")
