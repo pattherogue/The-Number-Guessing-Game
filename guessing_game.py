@@ -54,7 +54,7 @@ def begin_playing():
         else:
             # After the game ends I should be shown my number of attempts at guessing
             # When game ends, an ending message is shown to player
-            print("Yay, you got it! It took you {} tries.").format(guess_attempt)
+            print("Yay, you got it! It took you {} tries.".format(guess_attempt))
             break        
     end_game()
 
