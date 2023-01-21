@@ -38,15 +38,15 @@ def begin_playing():
         if guess > 10 or guess < 1:
             print(" Range has to be from 1 to 10. Try again! ")
             continue
-        if guess != num_range:
+        elif guess != num_range:
             print (" Sorry, you lost. Feel free to try again trmo! ")
             end_game()
-        if guess > num_range:
+        elif guess > num_range:
             print(" Try lower like the sea ")
     
            
             continue
-        if guess < num_range:
+        elif guess < num_range:
             print(" Try higher like the sky ") 
          
         
