@@ -27,8 +27,7 @@ def begin_playing():
 # I should be continuously promptred for a guess until I get it right
     while True:
         try:
-            guess_attempt += 1 
-            
+            guess_attempt += 1
             guess= int(input("Think of a number from 1 to 10 (both included): "))
         except ValueError:
             print("Trying guessing with a number ONLY.")
@@ -43,13 +42,9 @@ def begin_playing():
             end_game()
         elif guess > num_range:
             print(" Try lower like the sea ")
-    
-           
             continue
         elif guess < num_range:
             print(" Try higher like the sky ") 
-         
-        
             continue
         else:
             # After the game ends I should be shown my number of attempts at guessing
